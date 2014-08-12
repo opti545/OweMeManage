@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--View Controller - OweMeManage-->
+        <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="JMViewController" sceneMemberID="viewController">
@@ -15,9 +15,40 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67h-1b-0ZV">
+                                <rect key="frame" x="20" y="150" width="280" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="82g-eI-2Ml"/>
+                                </constraints>
+                                <state key="normal" title="Add Friends">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rzn-QO-DoH">
+                                <rect key="frame" x="20" y="337" width="280" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="6Rh-29-n8v"/>
+                                </constraints>
+                                <state key="normal" title="Manage Who Owes Me">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="67h-1b-0ZV" firstAttribute="leading" secondItem="Rzn-QO-DoH" secondAttribute="leading" id="At4-EI-Lin"/>
+                            <constraint firstItem="67h-1b-0ZV" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="86" id="Aw4-4a-eji"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Rzn-QO-DoH" secondAttribute="bottom" constant="164" id="I8e-uQ-3dq"/>
+                            <constraint firstItem="Rzn-QO-DoH" firstAttribute="top" secondItem="67h-1b-0ZV" secondAttribute="bottom" constant="120" id="IqX-yI-JsS"/>
+                            <constraint firstItem="67h-1b-0ZV" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="XiC-ew-oQI"/>
+                            <constraint firstItem="Rzn-QO-DoH" firstAttribute="trailing" secondItem="67h-1b-0ZV" secondAttribute="trailing" id="bNC-RW-qL5"/>
+                            <constraint firstAttribute="trailing" secondItem="67h-1b-0ZV" secondAttribute="trailing" constant="20" symbolic="YES" id="reU-az-Lj1"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="OweMeManage" id="fBj-DZ-cZM"/>
+                    <navigationItem key="navigationItem" id="fBj-DZ-cZM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
